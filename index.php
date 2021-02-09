@@ -8,7 +8,7 @@ require_once 'config.php';
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer
-            src="https://maps.googleapis.com/maps/api/js?libraries=places&language=<?= $_SESSION['lang'] ?>&key=PUT_API_KEY_HERE"
+            src="https://maps.googleapis.com/maps/api/js?libraries=places&language=<?= $_SESSION['lang'] ?>&key=AIzaSyBVT929HOMYjieYlMGkTD_YKhgpj6kGIjw"
             type="text/javascript"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -115,10 +115,10 @@ require_once 'config.php';
         function initMap() {
 
             var myLatLng = {
-                lat: 52.520008,
-                lng: 13.404954
+                lat: 23.179338892954057,
+                lng: 88.11014368230397
             };
-            map = new google.maps.Map(document.getElementById('map'), {zoom: 16, center: myLatLng,});
+            map = new google.maps.Map(document.getElementById('map'), {zoom: 12, center: myLatLng,});
         }
 
         function setDestination() {
