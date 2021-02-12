@@ -8,7 +8,7 @@ require_once 'config.php';
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer
-            src="https://maps.googleapis.com/maps/api/js?libraries=places&language=<?= $_SESSION['lang'] ?>&key=AIzaSyBSd1KkuaM_4p3l8EllHsLyIp0-4WznfrY"
+            src="https://maps.googleapis.com/maps/api/js?libraries=places&language=<?= $_SESSION['lang'] ?>&key=API_KEY"
             type="text/javascript"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -159,7 +159,7 @@ require_once 'config.php';
         }
 
         // calculate distance , after finish send result to callback function
-        function calculateDistance(travel_mode, origin, destination) {
+     /*   function calculateDistance(travel_mode, origin, destination) {
 
             var DistanceMatrixService = new google.maps.DistanceMatrixService();
             DistanceMatrixService.getDistanceMatrix(
@@ -172,7 +172,7 @@ require_once 'config.php';
                     avoidHighways: false,
                     avoidTolls: false
                 }, save_results);
-        }
+        }*/
 
         // save distance results
         function save_results(response, status) {
